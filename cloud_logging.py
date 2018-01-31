@@ -21,6 +21,7 @@ import os
 
 LOGGING_PROJECT = os.environ.get('LOGGING_PROJECT', '')
 
+
 def configure(project=LOGGING_PROJECT):
     if not project:
         sys.stderr.write('!! Error: The $LOGGING_PROJECT enviroment '
