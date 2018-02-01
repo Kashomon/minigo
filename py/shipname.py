@@ -21,7 +21,7 @@ import go
 MODEL_NUM_REGEX = "^\d{6}"
 MODEL_NAME_REGEX = "^\d{6}(-\w+)+"
 
-SHIP_FILE = "data/names.txt"
+SHIP_FILE = "../data/names.txt"
 
 names = open(SHIP_FILE).read().split('\n')
 
