@@ -121,6 +121,7 @@ will set up other environment variables defaults.
 Running unit tests
 ------------------
 ```
+cd py
 BOARD_SIZE=9 python3 -m unittest discover tests
 ```
 
