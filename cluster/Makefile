@@ -10,9 +10,9 @@ make echo:
 
 make gpu-image:
 		mkdir -p staging/data
-		cp ../*.py staging/
+		cp ../py/*.py staging/
 		cp ../data/names.txt staging/data/
-		cp ../requirements.txt staging/
+		cp ../py/requirements.txt staging/
 		cp player_wrapper.sh staging/
 	    docker build -f Dockerfile.gpu -t "gcr.io/$(PROJECT)/minigo-gpu-player:$(VERSION)" .
 		rm staging/*.py
@@ -21,9 +21,9 @@ make gpu-image:
 
 image:
 		mkdir -p staging/data
-		cp ../*.py staging/
+		cp ../py/*.py staging/
 		cp -r ../data staging/
-		cp ../requirements-cpu.txt staging/
+		cp ../py/requirements-cpu.txt staging/
 		cp player_wrapper.sh staging/
 	    docker build -t "gcr.io/$(PROJECT)/minigo-player:$(VERSION)" .
 		rm staging/*.py
@@ -33,8 +33,8 @@ image:
 
 image-clean:
 		mkdir -p staging/
-		cp ../*.py staging/
-		cp ../requirements-cpu.txt staging/
+		cp ../py/*.py staging/
+		cp ../py/requirements-cpu.txt staging/
 		cp player_wrapper.sh staging/
 	    docker build --no-cache -t "gcr.io/$(PROJECT)/minigo-player:$(VERSION)" .
 		rm staging/*.py
