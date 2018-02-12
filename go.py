@@ -20,6 +20,9 @@ A PlayerMove is a (Color, Move) tuple
 
 (0, 0) is considered to be the upper left corner of the board, and (18, 0) is the lower left.
 '''
+
+# move zigs
+
 from collections import namedtuple
 import copy
 import itertools
