@@ -30,6 +30,11 @@ KGS Coordinate: Human-readable coordinate string indexed from bottom left, with
 PYGTP Coordinate: Tuple coordinate indexed starting at 1,1 from bottom-left
     in the format (column, row)
 
+
+
+FLARG
+
+
 So, for a 19x19,
 
 Coord Type      upper_left      upper_right     pass
