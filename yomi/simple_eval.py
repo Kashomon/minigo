@@ -27,7 +27,7 @@ def run():
 
     models = []
     seen_models = set()
-    model_reg = re.compile('\d{5}-\w+')
+    model_reg = re.compile('\d{6}-\w+')
     for b in blobs:
         match = model_reg.search(b.name)
         if match and not match.group(0) in seen_models:
