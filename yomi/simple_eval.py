@@ -23,6 +23,7 @@ def run():
         'storage', 'v1', http=credentials.authorize(httplib2.Http()))
 
     req = storage.buckets().get(bucket=BUCKET_NAME)
+
     resp = req.execute()
     print(json.dumps(resp))
 

@@ -11,6 +11,5 @@ six
 tqdm>=4.17
 
 httplib2
-google-cloud-storage
 oauth2client==4.1
 google-api-python-client
