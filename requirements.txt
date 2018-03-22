@@ -10,7 +10,10 @@ sgf==0.5
 six
 tqdm>=4.17
 
+# Model Zoo Requirements
 httplib2
 google-cloud-storage
 oauth2client==4.1
 google-api-python-client
+kubernetes
+google-auth
